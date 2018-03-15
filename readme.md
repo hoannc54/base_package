@@ -1,26 +1,25 @@
-# Package name
+**Tài liệu được tạo ra để lưu hành và đào tạo nội bộ, 
+anh em coder đi qua có ý kiến đóng góp vui lòng viết issue hoặc liên hệ trực tiếp**
 
-## Intro
+## Base composer package for package development
 
-Giới thiệu qua về package
+- [Sample readme](sample_readme.md) rename file này thành file readme.md của bạn :)
 
-## Requirements
+## Viết test
 
-Những yêu cầu khi dùng package
+- Việc viết test có thể sẽ hơi khó khăn cho các bạn mới làm kiểu viết test trước code. 
+Do đó có thể khởi tạo một số class base để mường tượng được package của mình sẽ làm gì, 
+cho ra cái gì sau đó viết test cho các hàm viết tạm đó(chưa viết code xử lý, chỉ giả lập đầu vào đầu ra).
+- Với các trường hợp cần viết test cho 1 đầu ra nào đó bạn phân vân, hãy viết vào issue để được hỗ trợ.
+- Viết test không nhất thiết phải sử dụng phpunit, đối với đầu ra kiểm chứng bằng mắt thì nên viết test sao cho 
+người dùng thấy được đầu vào đầu ra và mô tả đầu ra kỳ vọng như thế nào.
 
-## Usage
+### Write testing showcases
 
-Cách sử dụng, có thể được hoàn thiện bởi người dev
+_test file cho một số trường hợp cụ thể (thêm trường hợp của bạn vào [issue](https://github.com/vuthaihoc/base_package/issues/new) để chia sẻ/trao đổi)_
+ 
 
-## Test
-
-Hướng dẫn người dev cách test
-
-## Other information 
-
-Thông tin khác nếu có. Viết dạng heading sau đó ghi chi tiết
-
-### PHPUNIT config generate
+## PHPUNIT config generate
 
 ```
 #$ ./vendor/bin/phpunit --generate-configuration 
@@ -35,6 +34,6 @@ Source directory (relative to path shown above; default: src):
 Generated phpunit.xml in /Users/hocvt/Documents/webroot/kw_system/packages/base
 ```
 
-### PHPUNIT extensions
+## PHPUNIT extensions
 
 Có một số project cần test với tool đặc thù riêng thì xem thêm [danh sách extensions](https://phpunit.de/extensions.html)
