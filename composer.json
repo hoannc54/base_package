@@ -1,16 +1,18 @@
 {
-    "name": "123dok/sample",
-    "description": "Convert some type of document file",
+    "name": "colombo/base-package",
+    "description": "base package for creating other packages.",
+    "keywords": ["template", "composer", "package"],
     "type": "library",
+    "license": "MIT",
     "authors": [
         {
-            "name": "Vu Thai Hoc",
-            "email": "vuthaihoc.ttud@gmail.com"
+            "name": "Nguyen Cong Hoan",
+            "email": "nguyenconghoan94@gmail.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Dok123\\Sample\\": "src/"
+            "Colombo\\BasePackage\\": "src/"
         }
     },
     "require": {},
