@@ -1,5 +1,5 @@
 {
-    "name": "colombo/base-package",
+    "name": "hoannc54/base_package",
     "description": "base package for creating other packages.",
     "keywords": ["template", "composer", "package"],
     "type": "library",
